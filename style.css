@@ -15,17 +15,25 @@
     /* ############## */
 
     justify-content: center;
-    gap: 10px;
+    gap: 5px;
 
     margin: auto;
     width: 55vw;
     height: 700px;
 
-    border: 10px solid blue;
+    /* border: 10px solid blue; */
 
 }
-.box{
-    background-color: red;
+.box {
     width: 100%;
-    /* height:  */
+    border: 1px solid gray;
+}
+
+.default {
+    background-color: white;
+}
+
+.hover{
+    background-color: aqua;
+    cursor: pointer;
 }

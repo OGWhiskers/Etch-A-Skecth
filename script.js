@@ -11,7 +11,7 @@ const createGrid = (function () {
       if (n <= 100 && n > 0) {
         container.style.gridTemplateColumns = `repeat(${choice},1fr)`;
 
-        container.style.gridTemplateRows = `repeat(${choice},1fr`;
+        container.style.gridTemplateRows = `repeat(${choice},1fr)`;
 
         for (let i = 0; i < num; i++) {
           const div = document.createElement("div");
@@ -24,7 +24,7 @@ const createGrid = (function () {
         }
       } else {
         alert(
-          `Please choose a nummber between 1 to 100, for performance reasons`
+          `Please choose a number between 1 to 100, for performance reasons`
         );
       }
     };

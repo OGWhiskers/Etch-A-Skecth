@@ -1,6 +1,11 @@
 * {
   margin: 0;
 }
+@font-face {
+  font-family: "infinity";
+  src: url("/fonts/madeinfinity_personaluse-thin-webfont.woff2") format("woff2"),
+    url("/fonts/madeinfinity_personaluse-thin-webfont.woff") format("woff");
+}
 
 .container {
   display: grid;
@@ -16,7 +21,8 @@
   gap: 5px;
 
   margin: auto;
-  width: 55vw;
+  margin-bottom: 20px;
+  width: 75vw;
   height: 600px;
 }
 .box {
@@ -24,6 +30,7 @@
   height: 100%;
   border: 1px solid gray;
   transition: 0.1s ease-in-out;
+  cursor: pointer;
 }
 
 .default {
@@ -43,7 +50,15 @@
 
   margin: 30px 0px;
 }
-
+.signature {
+  display: flex;
+  width: 100vw;
+  justify-content: center;
+  gap: 20px;
+}
+.foot {
+  font-family: "infinity";
+}
 .choice,
 .reset {
   width: 20%;
@@ -52,6 +67,11 @@
 
   font-size: 15px;
   background-color: white;
-
+  transition: 0.4s ease-in-out;
+  font-family: "infinity";
   cursor: pointer;
+}
+.choice:hover,
+.reset:hover {
+  background-color: aqua;
 }
